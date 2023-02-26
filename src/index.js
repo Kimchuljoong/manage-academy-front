@@ -1,3 +1,8 @@
+/**
+ * created by kimchj
+ * created at 2023/03/26
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
