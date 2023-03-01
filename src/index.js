@@ -20,17 +20,20 @@ import HomePage from './pages/HomePage';
 import reportWebVitals from './reportWebVitals';
 import ClassPage from './pages/ClassPage';
 import Class from './components/Class';
+import ClassDetailPage from './pages/ClassDetailPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <div className="App" style={{paddingTop: '120px'}}>
+      <div className='container' style={{paddingTop: '120px'}}>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/classpage" element={<ClassPage />} />
           <Route exact path="/class" element={<Class />} />
+          <Route exact path="/class/new" element={<ClassDetailPage />} />
+          <Route exact path="/class/:id" element={<ClassDetailPage />} />
         </Routes>
       </div>
     </BrowserRouter>
