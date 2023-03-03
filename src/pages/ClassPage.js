@@ -14,7 +14,6 @@ import { Link } from "react-router-dom";
 const ClassPage = () => {
 
     let lst = ['a', 'b', 'c', 'd'];
-
     return (
         <>
             <div className="d-flex flex-row justify-content-between p-5">

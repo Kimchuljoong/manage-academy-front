@@ -22,6 +22,7 @@ import ClassPage from './pages/ClassPage';
 import Class from './components/Class';
 import ClassDetailPage from './pages/ClassDetailPage';
 import ClassProgressManagement from './pages/ClassProgressManagementPage';
+import StudentPage from './pages/StudentPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,6 +37,7 @@ root.render(
           <Route exact path="/class/new" element={<ClassDetailPage />} />
           <Route exact path="/class/:id/info" element={<ClassDetailPage />} />
           <Route exact path="/class/:id/progress" element={<ClassProgressManagement />} />
+          <Route exact path="/student/new" element={<StudentPage />} />
         </Routes>
       </div>
     </BrowserRouter>
